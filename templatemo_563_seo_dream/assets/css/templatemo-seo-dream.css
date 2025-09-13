@@ -357,6 +357,7 @@ header
 
 .header-area {
   background-color: #33ccc5;
+    /* background-image: url(../images/EWPL/image-1200x300.jpg); */
   position: absolute;
   top: 0px;
   left: 0px;
@@ -935,7 +936,8 @@ Banner Style
 
 .main-banner:before {
   content: "";
-  background-image: url(../images/banner-dec-right.png);
+  /* background-image: url(../images/banner-dec-right.png); */
+  background-image: url(../images/EWPL/image-1200x600.jpg);
   background-repeat: no-repeat;
   position: absolute;
   right: 0;
@@ -943,6 +945,7 @@ Banner Style
   width: 1159px;
   height: 797px;
   z-index: -1;
+    clip-path: polygon(0% 0, 100% 0, 100% 100%, 100% 100%);
 }
 
 .main-banner .left-content {
@@ -1102,8 +1105,8 @@ Features Style
 }
 
 .features-item h4 {
-  margin-left: 15px;
-  margin-right: 15px;
+  /* margin-left: 15px;
+  margin-right: 15px; */
   margin-top: 30px;
   font-size: 20px;
   line-height: 30px;
@@ -1471,6 +1474,7 @@ Portfolio
 .portfolio-item .thumb {
   position: relative;
   border-radius: 50px;
+  border: 1px solid deepskyblue;
 }
 
 .portfolio-item .thumb img {
@@ -1800,4 +1804,45 @@ responsive
   form#contact {
     padding: 30px;
   }
+}
+
+/* Client section css */
+    .clients-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.clients-section h2 {
+      font-size: 30px;
+    text-transform: capitalize;
+    color: #2a2a2a;
+    font-weight: 800;
+    position: relative;
+    z-index: 2;
+    line-height: 45px;
+}
+
+.client-names-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Space between client names */
+  /* max-width: 900px; */
+  margin: 0 auto;
+}
+
+.client-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #555;
+  background-color: #33ccc5;;
+  padding: 15px 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.client-name:hover {
+  transform: translateY(-5px);
 }
