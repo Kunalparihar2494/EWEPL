@@ -284,14 +284,14 @@ body {
   padding: 12px 25px;
   border-radius: 23px;
   letter-spacing: 0.25px;
-  border-bottom: 2px solid #fff !important;
+  border-bottom: 0px solid #fff !important;
   transition: all 0.3s;
 }
 
 .main-blue-button a:hover {
   background-color: #fff !important;
   color: #4771cb !important;
-  border-bottom: 2px solid #4771cb !important;
+  border-bottom: 1px solid #4771cb !important;
 }
 
 .main-green-button a {
@@ -357,7 +357,7 @@ header
 
 .header-area {
   background-color: #33ccc5;
-    /* background-image: url(../images/EWPL/image-1200x300.jpg); */
+  /* background-image: url(../images/EWPL/image-1200x300.jpg); */
   position: absolute;
   top: 0px;
   left: 0px;
@@ -937,7 +937,7 @@ Banner Style
 .main-banner:before {
   content: "";
   /* background-image: url(../images/banner-dec-right.png); */
-  background-image: url(../images/EWPL/image-1200x600.jpg);
+  /* background-image: url(../images/EWPL/image-1200x600.jpg); */
   background-repeat: no-repeat;
   position: absolute;
   right: 0;
@@ -945,7 +945,7 @@ Banner Style
   width: 1159px;
   height: 797px;
   z-index: -1;
-    clip-path: polygon(0% 0, 100% 0, 100% 100%, 100% 100%);
+  clip-path: polygon(0% 0, 100% 0, 100% 100%, 100% 100%);
 }
 
 .main-banner .left-content {
@@ -1007,6 +1007,7 @@ Features Style
 
 .features .features-content {
   z-index: 2;
+  padding: 5px;
   position: relative;
   background-color: #fff;
   border-radius: 50px;
@@ -1366,6 +1367,13 @@ About Us Style
   margin-bottom: 40px;
 }
 
+.about-us-content {
+  background-color: #fff;
+  border-radius: 50px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
 .about-us .left-image {
   margin-right: 45px;
 }
@@ -1396,6 +1404,8 @@ Services Style
 
 .our-services {
   padding-top: 120px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .our-services .section-heading {
@@ -1405,7 +1415,11 @@ Services Style
 }
 
 .our-services .container-fluid {
-  padding: 0px 80px;
+  padding: 25px 80px;
+  background-color: #fff;
+  border-radius: 50px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 .service-item {
@@ -1454,11 +1468,21 @@ Portfolio
 .our-portfolio {
   padding-top: 100px;
   overflow: hidden;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.portfolio-header-padding {
+  padding: 1.5rem 5rem;
 }
 
 .our-portfolio .container-fluid {
   padding-right: 0px;
   padding-left: 0px;
+  background-color: #fff;
+  border-radius: 50px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 .portfolio-item {
@@ -1681,6 +1705,12 @@ Footer Style
 --------------------------------------------- 
 */
 
+footer {
+  background-color: #fff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
 footer p {
   text-align: center;
   margin: 30px 0px;
@@ -1807,20 +1837,26 @@ responsive
 }
 
 /* Client section css */
-    .clients-section {
+.clients-section {
   text-align: center;
-  padding: 40px 20px;
-  background-color: #f9f9f9;
+  margin-top: 7rem;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding: 40px 25px;
+  background-color: #fff;
+  border-radius: 50px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 .clients-section h2 {
-      font-size: 30px;
-    text-transform: capitalize;
-    color: #2a2a2a;
-    font-weight: 800;
-    position: relative;
-    z-index: 2;
-    line-height: 45px;
+  font-size: 30px;
+  text-transform: capitalize;
+  color: #2a2a2a;
+  font-weight: 800;
+  position: relative;
+  z-index: 2;
+  line-height: 45px;
 }
 
 .client-names-container {
@@ -1836,7 +1872,7 @@ responsive
   font-size: 1.2em;
   font-weight: bold;
   color: #555;
-  background-color: #33ccc5;;
+  background-color: #33ccc5;
   padding: 15px 25px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -1845,4 +1881,44 @@ responsive
 
 .client-name:hover {
   transform: translateY(-5px);
+}
+
+/* show more product button */
+.show-more {
+  text-align: center;
+  font-weight: 700;
+  display: inline-block;
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* logo navbar */
+.navbar-logo {
+  width: 6%;
+  position: relative;
+  top: 1rem;
+  opacity: 0.9;
+}
+
+.rounded-border {
+  border-radius: 10px;
+}
+
+/* video bg */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 768px) {
+  #myVideo {
+    display: none;
+  }
 }
