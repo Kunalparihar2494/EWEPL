@@ -210,6 +210,8 @@ html,
 body {
   background: #fff;
   font-family: "Open Sans", sans-serif;
+  background: #2A7B9B;
+background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
 }
 
 ::selection {
@@ -1415,7 +1417,7 @@ Services Style
 }
 
 .our-services .container-fluid {
-  padding: 25px 80px;
+  padding: 1.5rem 3rem; 
   background-color: #fff;
   border-radius: 50px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
@@ -1884,16 +1886,28 @@ responsive
 }
 
 /* show more product button */
+.show-more-wrapper {
+  text-align: center;   /* centers inline elements */
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+
 .show-more {
-  text-align: center;
   font-weight: 700;
   display: inline-block;
   padding: 10px 20px;
-  background: #007bff;
+  background: #03a4ed;
   color: #fff;
   border-radius: 5px;
   text-decoration: none;
+  transition: background 0.3s;
 }
+
+.show-more:hover {
+  background: #0056b3;
+  color: #eee;
+}
+
 
 /* logo navbar */
 .navbar-logo {
@@ -1921,4 +1935,23 @@ responsive
   #myVideo {
     display: none;
   }
+}
+
+
+
+/* Product Page  */
+/* ----------------------------------------------------------------- */
+.product-page-section{
+  margin-top: 10rem;
+  content: "";
+  background-image: url(../images/banner-dec-left.png);
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.product-page-section h1{
+      font-size: 3rem;
+    font-family: system-ui;
+    color: cornsilk;
+    font-weight: 200;
 }
