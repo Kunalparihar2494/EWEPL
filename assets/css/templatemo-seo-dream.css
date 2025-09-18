@@ -28,6 +28,7 @@ font & reset css
 --------------------------------------------- 
 */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+
 /* 
 ---------------------------------------------
 reset
@@ -211,7 +212,7 @@ body {
   background: #fff;
   font-family: "Open Sans", sans-serif;
   background: #2A7B9B;
-background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+  background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
 }
 
 ::selection {
@@ -225,17 +226,21 @@ background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 
 }
 
 @media (max-width: 991px) {
+
   html,
   body {
     overflow-x: hidden;
   }
+
   .mobile-top-fix {
     margin-top: 30px;
     margin-bottom: 0px;
   }
+
   .mobile-bottom-fix {
     margin-bottom: 30px;
   }
+
   .mobile-bottom-fix-big {
     margin-bottom: 60px;
   }
@@ -681,16 +686,19 @@ header
     padding-left: 12px;
     padding-right: 12px;
   }
+
   .header-area .main-nav:before {
     display: none;
   }
 }
 
 @media (max-width: 992px) {
+
   .header-area .main-nav .nav li:last-child,
   .background-header .main-nav .nav li:last-child {
     display: none;
   }
+
   .header-area .main-nav .nav li:nth-child(6),
   .background-header .main-nav .nav li:nth-child(6) {
     padding-right: 0px;
@@ -701,17 +709,21 @@ header
   .background-header .main-nav .nav {
     margin-top: 80px !important;
   }
+
   .header-area .main-nav .logo {
     color: #1e1e1e;
   }
+
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
     color: #33ccc5 !important;
     opacity: 1;
   }
+
   .header-area.header-sticky .nav li.search-icon a {
     width: 100%;
   }
+
   .header-area {
     background-color: #33ccc5;
     padding: 0px 15px;
@@ -719,18 +731,23 @@ header
     box-shadow: none;
     text-align: center;
   }
+
   .header-area .container {
     padding: 0px;
   }
+
   .header-area .logo {
     margin-left: 30px;
   }
+
   .header-area .menu-trigger {
     display: block !important;
   }
+
   .header-area .main-nav {
     overflow: hidden;
   }
+
   .header-area .main-nav .nav {
     float: none;
     width: 100%;
@@ -741,15 +758,19 @@ header
     transition: all 0s ease 0s;
     margin-left: 0px;
   }
+
   .background-header .nav {
     margin-top: 80px;
   }
+
   .header-area .main-nav .nav li:first-child {
     border-top: 1px solid #eee;
   }
+
   .header-area.header-sticky .nav {
     margin-top: 100px;
   }
+
   .header-area .main-nav .nav li {
     width: 100%;
     background: #fff;
@@ -757,6 +778,7 @@ header
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
+
   .header-area .main-nav .nav li a {
     height: 50px !important;
     line-height: 50px !important;
@@ -765,10 +787,12 @@ header
     background: #f7f7f7 !important;
     color: #191a20 !important;
   }
+
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
     color: #33ccc5 !important;
   }
+
   .header-area .main-nav .nav li.submenu ul {
     position: relative;
     visibility: inherit;
@@ -781,22 +805,27 @@ header
     box-shadow: none;
     height: 0px;
   }
+
   .header-area .main-nav .nav li.submenu ul li a {
     font-size: 12px;
     font-weight: 400;
   }
+
   .header-area .main-nav .nav li.submenu ul li a:hover:before {
     width: 0px;
   }
+
   .header-area .main-nav .nav li.submenu ul.active {
     height: auto !important;
   }
+
   .header-area .main-nav .nav li.submenu:after {
     color: #3b566e;
     right: 25px;
     font-size: 14px;
     top: 15px;
   }
+
   .header-area .main-nav .nav li.submenu:hover ul,
   .header-area .main-nav .nav li.submenu:focus ul {
     height: 0px;
@@ -938,7 +967,7 @@ Banner Style
 
 .main-banner:before {
   content: "";
-  /* background-image: url(../images/banner-dec-right.png); */
+  background-image: url(../images/banner-dec-right.png);
   /* background-image: url(../images/EWPL/image-1200x600.jpg); */
   background-repeat: no-repeat;
   position: absolute;
@@ -946,7 +975,8 @@ Banner Style
   top: 100px;
   width: 1159px;
   height: 797px;
-  z-index: -1;
+  z-index: 0;
+  opacity: 0.6;
   clip-path: polygon(0% 0, 100% 0, 100% 100%, 100% 100%);
 }
 
@@ -995,6 +1025,10 @@ Banner Style
 
 .main-banner .right-image img {
   max-width: 593px;
+  position: relative;
+  top: 25px;
+  right: 39px;
+
 }
 
 /* 
@@ -1021,11 +1055,9 @@ Features Style
   padding: 30px;
   border-radius: 50px;
   background: rgb(255, 255, 255);
-  background: linear-gradient(
-    105deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
+  background: linear-gradient(105deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 100%);
   transition: background-color 0.5s;
   -webkit-transition: background-color 0.5s;
   -o-transition: background-color 0.5s;
@@ -1034,11 +1066,9 @@ Features Style
 
 .features-item:hover {
   background: rgb(51, 204, 197);
-  background: linear-gradient(
-    105deg,
-    rgba(51, 204, 197, 1) 0%,
-    rgba(8, 141, 195, 1) 100%
-  );
+  background: linear-gradient(105deg,
+      rgba(51, 204, 197, 1) 0%,
+      rgba(8, 141, 195, 1) 100%);
 }
 
 .features-item:hover h4 {
@@ -1156,6 +1186,7 @@ Features Style
   box-shadow: none;
   position: relative;
 }
+
 .progress:after {
   content: "";
   width: 100%;
@@ -1166,7 +1197,8 @@ Features Style
   top: 0;
   left: 0;
 }
-.progress > span {
+
+.progress>span {
   width: 50%;
   height: 100%;
   overflow: hidden;
@@ -1174,9 +1206,11 @@ Features Style
   top: 0;
   z-index: 1;
 }
+
 .progress .progress-left {
   left: 0;
 }
+
 .progress .progress-bar {
   width: 100%;
   height: 100%;
@@ -1187,6 +1221,7 @@ Features Style
   top: 0;
   border-color: #fd6a54;
 }
+
 .progress .progress-left .progress-bar {
   left: 100%;
   border-top-right-radius: 75px;
@@ -1195,9 +1230,11 @@ Features Style
   -webkit-transform-origin: center left;
   transform-origin: center left;
 }
+
 .progress .progress-right {
   right: 0;
 }
+
 .progress .progress-right .progress-bar {
   left: -100%;
   border-top-left-radius: 75px;
@@ -1206,6 +1243,7 @@ Features Style
   -webkit-transform-origin: center right;
   transform-origin: center right;
 }
+
 .progress .progress-value {
   text-align: center;
   color: #2a2a2a;
@@ -1220,9 +1258,11 @@ Features Style
   height: 100%;
   font-weight: 700;
 }
+
 .progress .progress-value div {
   margin-top: 10px;
 }
+
 .progress .progress-value span {
   font-size: 12px;
   text-transform: uppercase;
@@ -1234,6 +1274,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .progress[data-percentage="10"] .progress-right .progress-bar {
   animation: loading-1 1.5s linear forwards;
 }
+
 .progress[data-percentage="10"] .progress-left .progress-bar {
   animation: 0;
 }
@@ -1241,6 +1282,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .progress[data-percentage="20"] .progress-right .progress-bar {
   animation: loading-2 1.5s linear forwards;
 }
+
 .progress[data-percentage="20"] .progress-left .progress-bar {
   animation: 0;
 }
@@ -1248,6 +1290,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .progress[data-percentage="30"] .progress-right .progress-bar {
   animation: loading-3 1.5s linear forwards;
 }
+
 .progress[data-percentage="30"] .progress-left .progress-bar {
   animation: 0;
 }
@@ -1255,6 +1298,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .progress[data-percentage="40"] .progress-right .progress-bar {
   animation: loading-4 1.5s linear forwards;
 }
+
 .progress[data-percentage="40"] .progress-left .progress-bar {
   animation: 0;
 }
@@ -1262,6 +1306,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .progress[data-percentage="50"] .progress-right .progress-bar {
   animation: loading-5 1.5s linear forwards;
 }
+
 .progress[data-percentage="50"] .progress-left .progress-bar {
   animation: 0;
 }
@@ -1269,6 +1314,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .progress[data-percentage="60"] .progress-right .progress-bar {
   animation: loading-5 1.5s linear forwards;
 }
+
 .progress[data-percentage="60"] .progress-left .progress-bar {
   animation: loading-1 1.5s linear forwards 1.5s;
 }
@@ -1276,6 +1322,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .progress[data-percentage="70"] .progress-right .progress-bar {
   animation: loading-5 1.5s linear forwards;
 }
+
 .progress[data-percentage="70"] .progress-left .progress-bar {
   animation: loading-2 1.5s linear forwards 1.5s;
 }
@@ -1283,6 +1330,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .progress[data-percentage="80"] .progress-right .progress-bar {
   animation: loading-5 1.5s linear forwards;
 }
+
 .progress[data-percentage="80"] .progress-left .progress-bar {
   animation: loading-3 1.5s linear forwards 1.5s;
 }
@@ -1290,6 +1338,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .progress[data-percentage="90"] .progress-right .progress-bar {
   animation: loading-5 1.5s linear forwards;
 }
+
 .progress[data-percentage="90"] .progress-left .progress-bar {
   animation: loading-4 1.5s linear forwards 1.5s;
 }
@@ -1297,6 +1346,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .progress[data-percentage="100"] .progress-right .progress-bar {
   animation: loading-5 1.5s linear forwards;
 }
+
 .progress[data-percentage="100"] .progress-left .progress-bar {
   animation: loading-5 1.5s linear forwards 1.5s;
 }
@@ -1306,51 +1356,61 @@ Due to the split circle of progress-left and progress right, we must use the ani
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
+
   100% {
     -webkit-transform: rotate(36);
     transform: rotate(36deg);
   }
 }
+
 @keyframes loading-2 {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
+
   100% {
     -webkit-transform: rotate(72);
     transform: rotate(72deg);
   }
 }
+
 @keyframes loading-3 {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
+
   100% {
     -webkit-transform: rotate(108);
     transform: rotate(108deg);
   }
 }
+
 @keyframes loading-4 {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
+
   100% {
     -webkit-transform: rotate(144);
     transform: rotate(144deg);
   }
 }
+
 @keyframes loading-5 {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
+
   100% {
     -webkit-transform: rotate(180);
     transform: rotate(180deg);
   }
 }
+
 .progress {
   margin-bottom: 1em;
 }
@@ -1417,7 +1477,7 @@ Services Style
 }
 
 .our-services .container-fluid {
-  padding: 1.5rem 3rem; 
+  padding: 1.5rem 3rem;
   background-color: #fff;
   border-radius: 50px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
@@ -1515,11 +1575,9 @@ Portfolio
   left: 0;
   top: 0;
   background: rgb(51, 204, 197);
-  background: linear-gradient(
-    105deg,
-    rgba(51, 204, 197, 1) 0%,
-    rgba(8, 141, 195, 1) 100%
-  );
+  background: linear-gradient(105deg,
+      rgba(51, 204, 197, 1) 0%,
+      rgba(8, 141, 195, 1) 100%);
   width: 100%;
   height: 100%;
   opacity: 0;
@@ -1591,6 +1649,7 @@ contact
   background-position: center center;
   background-size: cover;
 }
+
 .contact-us .section-heading {
   text-align: center;
   margin-left: 20px;
@@ -1737,10 +1796,12 @@ responsive
   .header-area .main-nav .logo h4 {
     font-size: 24px;
   }
+
   .header-area .main-nav .logo h4 img {
     max-width: 25px;
     margin-left: 0px;
   }
+
   .header-area .main-nav .nav li:last-child {
     padding-left: 20px;
   }
@@ -1750,47 +1811,60 @@ responsive
   .header-area .main-nav .logo h4 {
     font-size: 20px;
   }
+
   .main-banner .left-content {
     margin-right: 0px;
   }
+
   .main-banner {
     text-align: center;
   }
+
   .main-banner:before {
     display: none;
   }
+
   .main-banner .right-image {
     margin: 30px auto 0px auto;
     text-align: center;
   }
+
   .features-item {
     margin-bottom: 45px;
   }
+
   .last-features-item,
   .last-skill-item {
     margin-bottom: 0px !important;
   }
+
   .skill-item {
     margin-bottom: 30px;
   }
+
   .service-item {
     text-align: center;
   }
+
   .service-item .icon {
     margin-top: 0px;
     margin-bottom: 30px;
   }
+
   .about-us .left-image {
     margin-right: 30px;
     margin-left: 30px;
     margin-bottom: 45px;
   }
+
   .our-portfolio .owl-nav {
     display: none !important;
   }
+
   .contact-info {
     margin-top: 60px;
   }
+
   form#contact {
     padding: 45px;
   }
@@ -1800,25 +1874,31 @@ responsive
   .header-area .main-nav .logo h4 {
     font-size: 30px;
   }
+
   .header-area .main-nav .logo h4 img {
     max-width: 30px;
     margin-left: 5px;
   }
+
   .main-banner .info-stat {
     margin-bottom: 15px;
   }
+
   .service-item {
     text-align: center;
     padding: 30px;
   }
+
   .service-item .icon {
     float: none;
     margin-right: 0px;
     margin-bottom: 15px;
   }
+
   .service-item .right-content {
     display: inline-block;
   }
+
   .our-portfolio .section-heading,
   .about-us .section-heading,
   .about-us .about-item,
@@ -1826,13 +1906,16 @@ responsive
   .about-us .main-green-button {
     text-align: center;
   }
+
   .our-services .section-heading {
     margin-left: 15px;
     margin-right: 15px;
   }
+
   .about-us .about-item {
     margin-top: 15px;
   }
+
   form#contact {
     padding: 30px;
   }
@@ -1865,7 +1948,8 @@ responsive
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px; /* Space between client names */
+  gap: 20px;
+  /* Space between client names */
   /* max-width: 900px; */
   margin: 0 auto;
 }
@@ -1887,7 +1971,8 @@ responsive
 
 /* show more product button */
 .show-more-wrapper {
-  text-align: center;   /* centers inline elements */
+  text-align: center;
+  /* centers inline elements */
   margin-top: 20px;
   padding-bottom: 10px;
 }
@@ -1941,7 +2026,7 @@ responsive
 
 /* Product Page  */
 /* ----------------------------------------------------------------- */
-.product-page-section{
+.product-page-section {
   margin-top: 10rem;
   content: "";
   background-image: url(../images/banner-dec-left.png);
@@ -1949,9 +2034,9 @@ responsive
   z-index: -1;
 }
 
-.product-page-section h1{
-      font-size: 3rem;
-    font-family: system-ui;
-    color: cornsilk;
-    font-weight: 200;
+.product-page-section h1 {
+  font-size: 3rem;
+  font-family: system-ui;
+  color: cornsilk;
+  font-weight: 200;
 }
