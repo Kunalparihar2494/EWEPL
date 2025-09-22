@@ -1028,7 +1028,13 @@ Banner Style
   position: relative;
   top: 25px;
   right: 39px;
+}
 
+/* Hide on mobile (≤ 767px) */
+@media (max-width: 767.98px) {
+  .main-banner .right-image img {
+    display: none !important;
+  }
 }
 
 /* 
@@ -2039,4 +2045,53 @@ responsive
   font-family: system-ui;
   color: cornsilk;
   font-weight: 200;
+}
+
+/* logo slider */
+body {
+  align-items: center;
+  justify-content: center;
+}
+
+/* Animation speed: 40s */
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+.slider {
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
+
+.slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+
+.slider .slide {
+  height: 100px;
+  width: 250px;
+  padding: 15px;
+}
+
+.slider:hover .slide-track {
+  animation-play-state: paused;
+}
+
+/* expert designation */
+.exp_desig {
+  font-weight: 300;
+  position: relative;
+  bottom: 0.5rem;
 }

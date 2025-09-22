@@ -1,130 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="assets/images/EWPL/8337488.jpg" type="image/x-icon">
-    <title>EWEPL</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" href="assets/images/EWPL/8337488.jpg" type="image/x-icon">
+  <title>EWEPL</title>
 
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css" />
-    <link rel="stylesheet" href="assets/css/templatemo-seo-dream.css" />
-    <link rel="stylesheet" href="assets/css/animated.css" />
-    <link rel="stylesheet" href="assets/css/owl.css" />
-    <!--
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css" />
+  <link rel="stylesheet" href="assets/css/templatemo-seo-dream.css" />
+  <link rel="stylesheet" href="assets/css/animated.css" />
+  <link rel="stylesheet" href="assets/css/owl.css" />
+  <!--
 
 TemplateMo 563 SEO Dream
 
 https://templatemo.com/tm-563-seo-dream
 
 -->
-  </head>
 
-  <body>
-    <!-- ***** Preloader Start ***** -->
-    <div id="js-preloader" class="js-preloader">
-      <div class="preloader-inner">
-        <span class="dot"></span>
-        <div class="dots">
-          <span></span>
-          <span></span>
-          <span></span>
+
+  <style>
+    .toast {
+      visibility: hidden;
+      min-width: 250px;
+      background-color: #28a745;
+      color: #fff;
+      text-align: center;
+      border-radius: 5px;
+      padding: 15px;
+      position: fixed;
+      z-index: 1000;
+      left: 50%;
+      bottom: 30px;
+      transform: translateX(-50%);
+      font-weight: bold;
+    }
+
+    .toast.show {
+      visibility: visible;
+      animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    }
+
+    @keyframes fadein {
+      from {
+        bottom: 0;
+        opacity: 0;
+      }
+
+      to {
+        bottom: 30px;
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeout {
+      from {
+        bottom: 30px;
+        opacity: 1;
+      }
+
+      to {
+        bottom: 0;
+        opacity: 0;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <div id="toast" class="toast">Message Sent Successfully ✅</div>
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-1 navbar-logo">
+          <img src="assets/images/EWPL/EWEL LOGO - VERTICAL L2.jpg" alt="" />
+        </div>
+        <div class="col-11">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <h4>EWEPL</h4>
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section">
+                <a href="#top" class="active">Home</a>
+              </li>
+              <li class="scroll-to-section">
+                <a href="#features">Features</a>
+              </li>
+              <li class="scroll-to-section"><a href="#about">About Us</a></li>
+              <li class="scroll-to-section">
+                <a href="#services">Services</a>
+              </li>
+              <li class="scroll-to-section">
+                <a href="#portfolio">Product</a>
+              </li>
+              <li class="scroll-to-section">
+                <a href="#contact">Contact Us</a>
+              </li>
+              <li class="scroll-to-section">
+                <div class="main-blue-button">
+                  <a href="#contact">Get Your Quote</a>
+                </div>
+              </li>
+            </ul>
+            <a class="menu-trigger">
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
         </div>
       </div>
     </div>
-    <!-- ***** Preloader End ***** -->
+  </header>
+  <!-- ***** Header Area End ***** -->
 
-    <!-- ***** Header Area Start ***** -->
-    <header
-      class="header-area header-sticky wow slideInDown"
-      data-wow-duration="0.75s"
-      data-wow-delay="0s"
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-1 navbar-logo">
-            <img src="assets/images/EWPL/EWEL LOGO - VERTICAL L2.jpg" alt="" />
-          </div>
-          <div class="col-11">
-            <nav class="main-nav">
-              <!-- ***** Logo Start ***** -->
-              <a href="index.html" class="logo">
-                <h4>EWEPL</h4>
-              </a>
-              <!-- ***** Logo End ***** -->
-              <!-- ***** Menu Start ***** -->
-              <ul class="nav">
-                <li class="scroll-to-section">
-                  <a href="#top" class="active">Home</a>
-                </li>
-                <li class="scroll-to-section">
-                  <a href="#features">Features</a>
-                </li>
-                <li class="scroll-to-section"><a href="#about">About Us</a></li>
-                <li class="scroll-to-section">
-                  <a href="#services">Services</a>
-                </li>
-                <li class="scroll-to-section">
-                  <a href="#portfolio">Product</a>
-                </li>
-                <li class="scroll-to-section">
-                  <a href="#contact">Contact Us</a>
-                </li>
-                <li class="scroll-to-section">
-                  <div class="main-blue-button">
-                    <a href="#contact">Get Your Quote</a>
-                  </div>
-                </li>
-              </ul>
-              <a class="menu-trigger">
-                <span>Menu</span>
-              </a>
-              <!-- ***** Menu End ***** -->
-            </nav>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- ***** Header Area End ***** -->
-
-    <div
-      class="main-banner wow fadeIn"
-      id="top"
-      data-wow-duration="1s"
-      data-wow-delay="0.5s"
-    >
-      <video autoplay muted loop id="myVideo">
-        <source
-          src="./assets/video/12504681_1920_1080_30fps.mp4"
-          type="video/mp4"
-        />
-        Your browser does not support HTML5 video.
-      </video>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="row">
-              <div class="col-lg-6 align-self-center">
-                <div
-                  class="left-content header-text wow fadeInLeft"
-                  data-wow-duration="1s"
-                  data-wow-delay="1s"
-                >
-                  <div class="row">
-                    <!-- <div class="col-lg-4 col-sm-4">
+  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+    <video autoplay muted loop id="myVideo">
+      <source src="./assets/video/12504681_1920_1080_30fps.mp4" type="video/mp4" />
+      Your browser does not support HTML5 video.
+    </video>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6 align-self-center">
+              <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                <div class="row">
+                  <!-- <div class="col-lg-4 col-sm-4">
                     <div class="info-stat">
                       <h6>Agency Status:</h6>
                       <h4>Ready Work</h4>
@@ -142,144 +172,119 @@ https://templatemo.com/tm-563-seo-dream
                       <h4>$450/Meeting</h4>
                     </div>
                   </div> -->
-                    <div class="col-lg-12">
-                      <h2>ELECTRIC WORLD ENERGY PRIVATE LIMITED</h2>
-                    </div>
-                    <div class="col-lg-12">
-                      <div class="main-green-button scroll-to-section">
-                        <a href="#contact">Get Your Quote</a>
-                      </div>
+                  <div class="col-lg-12">
+                    <h2>ELECTRIC WORLD ENERGY PRIVATE LIMITED</h2>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="main-green-button scroll-to-section">
+                      <a href="#contact">Get Your Quote</a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-6">
-                <div
-                  class="right-image wow fadeInRight"
-                  data-wow-duration="1s"
-                  data-wow-delay="0.5s"
-                >
-                  <img src="assets/images/engineers-with-hard-hats-working-nuclear-power-plant.jpg" alt="" />
-                </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img src="assets/images/engineers-with-hard-hats-working-nuclear-power-plant.jpg" alt="" />
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div id="features" class="features section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="features-content">
-              <div class="row">
-                <div class="col-lg-2">
-                  <div
-                    class="features-item first-feature wow fadeInUp"
-                    data-wow-duration="1s"
-                    data-wow-delay="0s"
-                  >
-                    <div class="first-number number">
-                      <h6>01</h6>
-                    </div>
-                    <div class="icon"></div>
-                    <h4>Trading</h4>
-                    <div class="line-dec"></div>
-                    <p>Supply of MEP products, B2B, B2C</p>
+  <div id="features" class="features section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="features-content">
+            <div class="row">
+              <div class="col-lg-2">
+                <div class="features-item first-feature wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+                  <div class="first-number number">
+                    <h6>01</h6>
                   </div>
+                  <div class="icon"></div>
+                  <h4>Trading</h4>
+                  <div class="line-dec"></div>
+                  <p>Supply of MEP products, B2B, B2C</p>
                 </div>
-                <div class="col-lg-2">
-                  <div
-                    class="features-item second-feature wow fadeInUp"
-                    data-wow-duration="1s"
-                    data-wow-delay="0.2s"
-                  >
-                    <div class="second-number number">
-                      <h6>02</h6>
-                    </div>
-                    <div class="icon"></div>
-                    <h4>Contracting</h4>
-                    <div class="line-dec"></div>
-                    <p>
-                      Worked under contracts in large scale projects, turnkey
-                      project etc.
-                    </p>
+              </div>
+              <div class="col-lg-2">
+                <div class="features-item second-feature wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+                  <div class="second-number number">
+                    <h6>02</h6>
                   </div>
+                  <div class="icon"></div>
+                  <h4>Contracting</h4>
+                  <div class="line-dec"></div>
+                  <p>
+                    Worked under contracts in large scale projects, turnkey
+                    project etc.
+                  </p>
                 </div>
-                <div class="col-lg-2">
-                  <div
-                    class="features-item first-feature wow fadeInUp"
-                    data-wow-duration="1s"
-                    data-wow-delay="0.4s"
-                  >
-                    <div class="third-number number">
-                      <h6>03</h6>
-                    </div>
-                    <div class="icon"></div>
-                    <h4>Manufacturing</h4>
-                    <div class="line-dec"></div>
-                    <p>
-                      Link up with international companies to build/manufacture
-                      new products & electrical panel.
-                    </p>
+              </div>
+              <div class="col-lg-2">
+                <div class="features-item first-feature wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+                  <div class="third-number number">
+                    <h6>03</h6>
                   </div>
+                  <div class="icon"></div>
+                  <h4>Manufacturing</h4>
+                  <div class="line-dec"></div>
+                  <p>
+                    Link up with international companies to build/manufacture
+                    new products & electrical panel.
+                  </p>
                 </div>
-                <div class="col-lg-2">
-                  <div
-                    class="features-item second-feature last-features-item wow fadeInUp"
-                    data-wow-duration="1s"
-                    data-wow-delay="0.6s"
-                  >
-                    <div class="fourth-number number">
-                      <h6>04</h6>
-                    </div>
-                    <div class="icon"></div>
-                    <h4>Development</h4>
-                    <div class="line-dec"></div>
-                    <p>
-                      R&D on new products, making impact in Industry 4.0 & MEP
-                      sector.
-                    </p>
+              </div>
+              <div class="col-lg-2">
+                <div class="features-item second-feature last-features-item wow fadeInUp" data-wow-duration="1s"
+                  data-wow-delay="0.6s">
+                  <div class="fourth-number number">
+                    <h6>04</h6>
                   </div>
+                  <div class="icon"></div>
+                  <h4>Development</h4>
+                  <div class="line-dec"></div>
+                  <p>
+                    R&D on new products, making impact in Industry 4.0 & MEP
+                    sector.
+                  </p>
                 </div>
-                <div class="col-lg-2">
-                  <div
-                    class="features-item first-feature last-features-item wow fadeInUp"
-                    data-wow-duration="1s"
-                    data-wow-delay="0.6s"
-                  >
-                    <div class="second-number number">
-                      <h6>05</h6>
-                    </div>
-                    <div class="icon"></div>
-                    <h4>Maintenance</h4>
-                    <div class="line-dec"></div>
-                    <p>
-                      Capable of doing any type of maintenance. Taking AMC for
-                      electrical panels, cranes, MEP products.
-                    </p>
+              </div>
+              <div class="col-lg-2">
+                <div class="features-item first-feature last-features-item wow fadeInUp" data-wow-duration="1s"
+                  data-wow-delay="0.6s">
+                  <div class="second-number number">
+                    <h6>05</h6>
                   </div>
+                  <div class="icon"></div>
+                  <h4>Maintenance</h4>
+                  <div class="line-dec"></div>
+                  <p>
+                    Capable of doing any type of maintenance. Taking AMC for
+                    electrical panels, cranes, MEP products.
+                  </p>
                 </div>
-                <div class="col-lg-2">
-                  <div
-                    class="features-item second-feature last-features-item wow fadeInUp"
-                    data-wow-duration="1s"
-                    data-wow-delay="0.6s"
-                  >
-                    <div class="first-number number">
-                      <h6>06</h6>
-                    </div>
-                    <div class="icon"></div>
-                    <h4>Service</h4>
-                    <div class="line-dec"></div>
-                    <p>24x7 available, reliable & sustainable service.</p>
+              </div>
+              <div class="col-lg-2">
+                <div class="features-item second-feature last-features-item wow fadeInUp" data-wow-duration="1s"
+                  data-wow-delay="0.6s">
+                  <div class="first-number number">
+                    <h6>06</h6>
                   </div>
+                  <div class="icon"></div>
+                  <h4>Service</h4>
+                  <div class="line-dec"></div>
+                  <p>24x7 available, reliable & sustainable service.</p>
                 </div>
               </div>
             </div>
           </div>
-          <!-- <div class="col-lg-12">
+        </div>
+        <!-- <div class="col-lg-12">
           <div class="skills-content">
             <div class="row">
               <div class="col-lg-3">
@@ -357,36 +362,28 @@ https://templatemo.com/tm-563-seo-dream
             </div>
           </div>
         </div> -->
-        </div>
       </div>
     </div>
+  </div>
 
-    <div id="about" class="about-us section">
-      <div class="container">
-        <div class="row about-us-content">
-          <div class="col-lg-6">
-            <div
-              class="left-image wow fadeInLeft"
-              data-wow-duration="1s"
-              data-wow-delay="0.5s"
-            >
-              <img src="assets/images/about-left-image.png" alt="" />
-            </div>
+  <div id="about" class="about-us section">
+    <div class="container">
+      <div class="row about-us-content">
+        <div class="col-lg-6">
+          <div class="left-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+            <img src="assets/images/about-left-image.png" alt="" />
           </div>
-          <div
-            class="col-lg-6 align-self-center wow fadeInRight"
-            data-wow-duration="1s"
-            data-wow-delay="0.5s"
-          >
-            <div class="section-heading">
-              <h6>About Us</h6>
-              <h2>
-                Innovating
-                <em>Electrical & Mechanical Systems</em> for a
-                <span>Sustainable Future</span>
-              </h2>
-            </div>
-            <!-- <div class="row">
+        </div>
+        <div class="col-lg-6 align-self-center wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+          <div class="section-heading">
+            <h6>About Us</h6>
+            <h2>
+              Innovating
+              <em>Electrical & Mechanical Systems</em> for a
+              <span>Sustainable Future</span>
+            </h2>
+          </div>
+          <!-- <div class="row">
               <div class="col-lg-4 col-sm-4">
                 <div class="about-item">
                   <h4>750+</h4>
@@ -406,27 +403,27 @@ https://templatemo.com/tm-563-seo-dream
                 </div>
               </div>
             </div> -->
-            <p>
-              Electric World Energy (Indore) Private Limited is a Mechanical,
-              Electrical and Plumbing Contracting Company in Indore (M.P),
-              India. We work in design, build, construct, supply, install,
-              service, upgrade, maintenance of electro-mechanical systems &
-              networks, utilities and equipment. Our scope covers engineering,
-              documentation, submittal approval, coordinating drawings,
-              commissioning, start-up, as-built acc. to contract programs,
-              project time schedules – complying consultant specifications,
-              international standards & codes, safety & quality plans.
-            </p>
-            <div class="main-green-button">
-              <a href="#">Discover company</a>
-            </div>
+          <p>
+            Electric World Energy (Indore) Private Limited is a Mechanical,
+            Electrical and Plumbing Contracting Company in Indore (M.P),
+            India. We work in design, build, construct, supply, install,
+            service, upgrade, maintenance of electro-mechanical systems &
+            networks, utilities and equipment. Our scope covers engineering,
+            documentation, submittal approval, coordinating drawings,
+            commissioning, start-up, as-built acc. to contract programs,
+            project time schedules – complying consultant specifications,
+            international standards & codes, safety & quality plans.
+          </p>
+          <div class="main-green-button">
+            <a href="#">Discover company</a>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div id="services" class="our-services section">
-      <!-- <div class="container">
+  <div id="services" class="our-services section">
+    <!-- <div class="container">
         <div class="row">
           <div class="col-lg-6 offset-lg-3">
             <div
@@ -443,163 +440,134 @@ https://templatemo.com/tm-563-seo-dream
           </div>
         </div>
       </div> -->
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-6 offset-lg-3">
-            <div
-              class="section-heading wow bounceIn"
-              data-wow-duration="1s"
-              data-wow-delay="0.2s"
-            >
-              <h6>Our Services</h6>
-              <h2>
-                Discover What We Do &amp; <span>Offer</span> To Our
-                <em>Clients</em>
-              </h2>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
+            <h6>Our Services</h6>
+            <h2>
+              Discover What We Do &amp; <span>Offer</span> To Our
+              <em>Clients</em>
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="icon">
+                  <img src="assets/images/service-icon-01.png" alt="" />
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="right-content">
+                  <h4>Design & Build</h4>
+                  <p>
+                    We specialize in designing, building, and constructing
+                    advanced electro-mechanical systems and utilities.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-4">
-            <div
-              class="service-item wow bounceInUp"
-              data-wow-duration="1s"
-              data-wow-delay="0.3s"
-            >
-              <div class="row">
-                <div class="col-lg-4">
-                  <div class="icon">
-                    <img src="assets/images/service-icon-01.png" alt="" />
-                  </div>
+        <div class="col-lg-4">
+          <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="icon">
+                  <img src="assets/images/service-icon-02.png" alt="" />
                 </div>
-                <div class="col-lg-8">
-                  <div class="right-content">
-                    <h4>Design & Build</h4>
-                    <p>
-                      We specialize in designing, building, and constructing
-                      advanced electro-mechanical systems and utilities.
-                    </p>
-                  </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="right-content">
+                  <h4>Supply & Installation</h4>
+                  <p>
+                    Reliable supply and installation of MEP products,
+                    electrical panels, and industrial equipment.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div
-              class="service-item wow bounceInUp"
-              data-wow-duration="1s"
-              data-wow-delay="0.4s"
-            >
-              <div class="row">
-                <div class="col-lg-4">
-                  <div class="icon">
-                    <img src="assets/images/service-icon-02.png" alt="" />
-                  </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="icon">
+                  <img src="assets/images/service-icon-03.png" alt="" />
                 </div>
-                <div class="col-lg-8">
-                  <div class="right-content">
-                    <h4>Supply & Installation</h4>
-                    <p>
-                      Reliable supply and installation of MEP products,
-                      electrical panels, and industrial equipment.
-                    </p>
-                  </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="right-content">
+                  <h4>Service & Maintenance</h4>
+                  <p>
+                    Comprehensive AMC and on-demand maintenance for
+                    electrical, plumbing, and mechanical systems.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div
-              class="service-item wow bounceInUp"
-              data-wow-duration="1s"
-              data-wow-delay="0.5s"
-            >
-              <div class="row">
-                <div class="col-lg-4">
-                  <div class="icon">
-                    <img src="assets/images/service-icon-03.png" alt="" />
-                  </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="icon">
+                  <img src="assets/images/service-icon-03.png" alt="" />
                 </div>
-                <div class="col-lg-8">
-                  <div class="right-content">
-                    <h4>Service & Maintenance</h4>
-                    <p>
-                      Comprehensive AMC and on-demand maintenance for
-                      electrical, plumbing, and mechanical systems.
-                    </p>
-                  </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="right-content">
+                  <h4>Upgrades & Modernization</h4>
+                  <p>
+                    Upgrading old infrastructure with modern solutions that
+                    meet international standards.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div
-              class="service-item wow bounceInUp"
-              data-wow-duration="1s"
-              data-wow-delay="0.6s"
-            >
-              <div class="row">
-                <div class="col-lg-4">
-                  <div class="icon">
-                    <img src="assets/images/service-icon-03.png" alt="" />
-                  </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.7s">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="icon">
+                  <img src="assets/images/service-icon-01.png" alt="" />
                 </div>
-                <div class="col-lg-8">
-                  <div class="right-content">
-                    <h4>Upgrades & Modernization</h4>
-                    <p>
-                      Upgrading old infrastructure with modern solutions that
-                      meet international standards.
-                    </p>
-                  </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="right-content">
+                  <h4>Contracting & Projects</h4>
+                  <p>
+                    Expertise in contracting, commissioning, and execution of
+                    large-scale projects.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div
-              class="service-item wow bounceInUp"
-              data-wow-duration="1s"
-              data-wow-delay="0.7s"
-            >
-              <div class="row">
-                <div class="col-lg-4">
-                  <div class="icon">
-                    <img src="assets/images/service-icon-01.png" alt="" />
-                  </div>
-                </div>
-                <div class="col-lg-8">
-                  <div class="right-content">
-                    <h4>Contracting & Projects</h4>
-                    <p>
-                      Expertise in contracting, commissioning, and execution of
-                      large-scale projects.
-                    </p>
-                  </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.8s">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="icon">
+                  <img src="assets/images/service-icon-02.png" alt="" />
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div
-              class="service-item wow bounceInUp"
-              data-wow-duration="1s"
-              data-wow-delay="0.8s"
-            >
-              <div class="row">
-                <div class="col-lg-4">
-                  <div class="icon">
-                    <img src="assets/images/service-icon-02.png" alt="" />
-                  </div>
-                </div>
-                <div class="col-lg-8">
-                  <div class="right-content">
-                    <h4>Quality & Compliance</h4>
-                    <p>
-                      Strict adherence to consultant specifications, codes, and
-                      safety & quality standards.
-                    </p>
-                  </div>
+              <div class="col-lg-8">
+                <div class="right-content">
+                  <h4>Quality & Compliance</h4>
+                  <p>
+                    Strict adherence to consultant specifications, codes, and
+                    safety & quality standards.
+                  </p>
                 </div>
               </div>
             </div>
@@ -607,156 +575,130 @@ https://templatemo.com/tm-563-seo-dream
         </div>
       </div>
     </div>
+  </div>
 
-    <div id="portfolio" class="our-portfolio section">
-      <!-- <div class="container">
-        <div class="row">
-          <div class="col-lg-5">
-            <div
-              class="section-heading wow fadeInLeft"
-              data-wow-duration="1s"
-              data-wow-delay="0.3s"
-            >
-              <h6>Our Product</h6>
-              <h2>Discover Our <em>Products</em> And <span>Showcases</span></h2>
-            </div>
+  <div id="portfolio" class="our-portfolio section">
+    <div class="container-fluid wow fadeIn product-show" data-wow-duration="1s" data-wow-delay="0.7s">
+      <!-- <div class="row portfolio-header-padding">
+          <div class="section-heading wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+            <h6>Our Product</h6>
+            <h2>Discover Our <em>Products</em> And <span>Showcases</span></h2>
           </div>
-        </div>
+      
       </div> -->
-      <div
-        class="container-fluid wow fadeIn product-show"
-        data-wow-duration="1s"
-        data-wow-delay="0.7s"
-      >
         <div class="row portfolio-header-padding">
-          <div class="col-lg-5">
-            <div
-              class="section-heading wow fadeInLeft"
-              data-wow-duration="1s"
-              data-wow-delay="0.3s"
-            >
-              <!-- <h6>Our Product</h6> -->
-              <h2>Discover Our <em>Products</em> And <span>Showcases</span></h2>
-            </div>
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
+           <h6>Our Product</h6>
+            <h2>Discover Our <em>Products</em> And <span>Showcases</span></h2>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="loop owl-carousel">
-              <div class="item">
-                <div class="portfolio-item">
-                  <div class="thumb">
-                    <img
-                      src="assets/images/products/Shriram_Associate_PVC_Pipe_Fittings_1.webp"
-                      alt=""
-                    />
-                    <div class="hover-content">
-                      <div class="inner-content">
-                        <a href="#"><h4>Pipes</h4></a>
-                        <!-- <span>Marketing</span> -->
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-item">
-                  <div class="thumb">
-                    <img src="assets/images/products/capacitors.png" alt="" />
-                    <div class="hover-content">
-                      <div class="inner-content">
-                        <!-- <a href="#"><h4>Awesome Project 102</h4></a> -->
-                        <!-- <span>Capacitors</span> -->
-                        <h4>Capacitors</h4>
-                      </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="loop owl-carousel">
+            <div class="item">
+              <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/products/Shriram_Associate_PVC_Pipe_Fittings_1.webp" alt="" />
+                  <div class="hover-content">
+                    <div class="inner-content">
+                      <a href="#">
+                        <h4>Pipes</h4>
+                      </a>
+                      <!-- <span>Marketing</span> -->
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="item">
-                <div class="portfolio-item">
-                  <div class="thumb">
-                    <img
-                      src="assets/images/products/control cables61a62646d3d7b.jpg"
-                      alt=""
-                    />
-                    <div class="hover-content">
-                      <div class="inner-content">
-                        <!-- <a href="#"><h4>Awesome Project 103</h4></a> -->
-                        <!-- <span>Cables</span> -->
-                        <h4>Cables</h4>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-item">
-                  <div class="thumb">
-                    <img src="assets/images/products/contactor.webp" alt="" />
-                    <div class="hover-content">
-                      <div class="inner-content">
-                        <!-- <a href="#"><h4>Awesome Project 104</h4></a> -->
-                        <!-- <span>Contactor</span> -->
-                        <h4>Contactor</h4>
-                      </div>
+              <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/products/capacitors.png" alt="" />
+                  <div class="hover-content">
+                    <div class="inner-content">
+                      <!-- <a href="#"><h4>Awesome Project 102</h4></a> -->
+                      <!-- <span>Capacitors</span> -->
+                      <h4>Capacitors</h4>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="item">
-                <div class="portfolio-item">
-                  <div class="thumb">
-                    <img
-                      src="assets/images/EWPL/Panel/400-volt-motor-control-center-mcc-type-electric-cabinets-with-fixed-shelves_484521-280.avif"
-                      alt=""
-                    />
-                    <div class="hover-content">
-                      <div class="inner-content">
-                        <!-- <a href="#"><h4>Awesome Project 105</h4></a> -->
-                        <!-- <span>Electric Panel</span> -->
-                        <h4>Electric Panel</h4>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-item">
-                  <div class="thumb">
-                    <img
-                      src="assets/images/products/Distribution-Box.webp"
-                      alt=""
-                    />
-                    <div class="hover-content">
-                      <div class="inner-content">
-                        <!-- <a href="#"><h4>Awesome Project 106</h4></a> -->
-                        <!-- <span>Distribution Box</span> -->
-                        <h4>Distribution Box</h4>
-                      </div>
+            </div>
+            <div class="item">
+              <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/products/control cables61a62646d3d7b.jpg" alt="" />
+                  <div class="hover-content">
+                    <div class="inner-content">
+                      <!-- <a href="#"><h4>Awesome Project 103</h4></a> -->
+                      <!-- <span>Cables</span> -->
+                      <h4>Cables</h4>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="item">
-                <div class="portfolio-item">
-                  <div class="thumb">
-                    <img src="assets/images/products/mccb.jpg" alt="" />
-                    <div class="hover-content">
-                      <div class="inner-content">
-                        <!-- <a href="#"><h4>Awesome Project 107</h4></a> -->
-                        <!-- <span>MCCB</span> -->
-                        <h4>MCCB</h4>
-                      </div>
+              <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/products/contactor.webp" alt="" />
+                  <div class="hover-content">
+                    <div class="inner-content">
+                      <!-- <a href="#"><h4>Awesome Project 104</h4></a> -->
+                      <!-- <span>Contactor</span> -->
+                      <h4>Contactor</h4>
                     </div>
                   </div>
                 </div>
-                <div class="portfolio-item">
-                  <div class="thumb">
-                    <img
-                      src="assets/images/products/cable-tray-range.jpg"
-                      alt=""
-                    />
-                    <div class="hover-content">
-                      <div class="inner-content">
-                        <!-- <a href="#"><h4>Awesome Project 108</h4></a> -->
-                        <!-- <span>Cable Tray</span> -->
-                        <h4>Cable Tray</h4>
-                      </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="portfolio-item">
+                <div class="thumb">
+                  <img
+                    src="assets/images/EWPL/Panel/400-volt-motor-control-center-mcc-type-electric-cabinets-with-fixed-shelves_484521-280.avif"
+                    alt="" />
+                  <div class="hover-content">
+                    <div class="inner-content">
+                      <!-- <a href="#"><h4>Awesome Project 105</h4></a> -->
+                      <!-- <span>Electric Panel</span> -->
+                      <h4>Electric Panel</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/products/Distribution-Box.webp" alt="" />
+                  <div class="hover-content">
+                    <div class="inner-content">
+                      <!-- <a href="#"><h4>Awesome Project 106</h4></a> -->
+                      <!-- <span>Distribution Box</span> -->
+                      <h4>Distribution Box</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/products/mccb.jpg" alt="" />
+                  <div class="hover-content">
+                    <div class="inner-content">
+                      <!-- <a href="#"><h4>Awesome Project 107</h4></a> -->
+                      <!-- <span>MCCB</span> -->
+                      <h4>MCCB</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/products/cable-tray-range.jpg" alt="" />
+                  <div class="hover-content">
+                    <div class="inner-content">
+                      <!-- <a href="#"><h4>Awesome Project 108</h4></a> -->
+                      <!-- <span>Cable Tray</span> -->
+                      <h4>Cable Tray</h4>
                     </div>
                   </div>
                 </div>
@@ -764,215 +706,334 @@ https://templatemo.com/tm-563-seo-dream
             </div>
           </div>
         </div>
-           <div class="show-more-wrapper">
-  <a href="products.html" class="show-more">Show More</a>
-</div>
+      </div>
+      <div class="show-more-wrapper">
+        <a href="products.html" class="show-more">Show More</a>
+      </div>
+    </div>
+  </div>
+  <!-- client section -->
+  <!-- <a href="products.html"> <h6 class="show-more">Show More</h6> </a> -->
+  <section class="clients-section">
+    <div class="section-heading wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+      <h6>Our Valued Clients</h6>
+      <h2>Partnerships <span>built on trust, results and long-term </span> success.</h2>
+    </div>
+
+    <!-- <div class="client-names-container">
+      <p class="client-name">
+        Indore Clean Energy Pvt. Ltd. & GPS Renewals Ltd.
+      </p>
+      <p class="client-name">
+        Insight Mall Developers Pvt. Ltd. (Phoenix Citadel Mall)
+      </p>
+      <p class="client-name">Naman Mall & Management (IT Mall)</p>
+      <p class="client-name">Byju’s Tuition</p>
+      <p class="client-name">Pragati Industrial Park</p>
+      <p class="client-name">Jaideep Ispat & Alloy</p>
+      <p class="client-name">Kingspan Jindal</p>
+      <p class="client-name">Ralsen Tyres</p>
+      <p class="client-name">Panasonic Energy Pvt. Ltd.</p>
+      <p class="client-name">Bergwaff Organic Pvt. Ltd.</p>
+      <p class="client-name">Safeflex International Ltd.</p>
+      <p class="client-name">Power Grid Corporation of India, Gwalior</p>
+      <p class="client-name">Ordinance Factory (Khamaria, Jabalpur)</p>
+      <p class="client-name">
+        Ostwal Group (Shri Ganpati Fertilizer Ltd., Krishana Phoschem Ltd.,
+        Madhya Bharat Agro Pvt. Ltd.)
+      </p>
+      <p class="client-name">Electrovation Global Technology LLP</p>
+    </div> -->
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="slider">
+          <div class="slide-track">
+            <div class="slide">
+              <img src="assets/images/Client_Logo/MP_Birla_Logo.jpeg" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/Client_Logo/Omaxe_Logo.jpeg" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/Client_Logo/Ordnance Factory (Khamaria, Jabalpur).jpeg" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/Client_Logo/Swara_Logo.jpeg" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/Client_Logo/Syncom_logo.jpeg" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/Client_Logo/Treasure_Group_Logo.jpeg" height="100" width="250" alt="" />
+            </div>
+            <!-- <div class="slide">
+              <img src="assets/images/Client_Logo/Unistar_Logo.jpeg" height="100" width="250" alt="" />
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="slider">
+          <div class="slide-track">
+             <div class="slide">
+              <img src="assets/images/Client_Logo/Bergwaff Organic Pvt. Ltd.jpeg" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/Client_Logo/General_Logo.jpeg" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/Client_Logo/Indore Clean Energy Pvt. Ltd. & GPS Renewals Ltd.jpeg" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/Client_Logo/Jaideep Ispat & Alloy.jpeg" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/Client_Logo/JBM_Logo.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/Client_Logo/Knovea_Logo.jpeg" height="100" width="250" alt="" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- <a href="products.html"> <h6 class="show-more">Show More</h6> </a> -->
-    <section class="clients-section">
-      <div
-        class="section-heading wow fadeInLeft"
-        data-wow-duration="1s"
-        data-wow-delay="0.3s"
-      >
-        <!-- <h6>Our Product</h6> -->
-        <h2>Our Valued <span>Clients</span></h2>
-      </div>
 
-      <div class="client-names-container">
-        <p class="client-name">
-          Indore Clean Energy Pvt. Ltd. & GPS Renewals Ltd.
-        </p>
-        <p class="client-name">
-          Insight Mall Developers Pvt. Ltd. (Phoenix Citadel Mall)
-        </p>
-        <p class="client-name">Naman Mall & Management (IT Mall)</p>
-        <p class="client-name">Byju’s Tuition</p>
-        <p class="client-name">Pragati Industrial Park</p>
-        <p class="client-name">Jaideep Ispat & Alloy</p>
-        <p class="client-name">Kingspan Jindal</p>
-        <p class="client-name">Ralsen Tyres</p>
-        <p class="client-name">Panasonic Energy Pvt. Ltd.</p>
-        <p class="client-name">Bergwaff Organic Pvt. Ltd.</p>
-        <p class="client-name">Safeflex International Ltd.</p>
-        <p class="client-name">Power Grid Corporation of India, Gwalior</p>
-        <p class="client-name">Ordinance Factory (Khamaria, Jabalpur)</p>
-        <p class="client-name">
-          Ostwal Group (Shri Ganpati Fertilizer Ltd., Krishana Phoschem Ltd.,
-          Madhya Bharat Agro Pvt. Ltd.)
-        </p>
-        <p class="client-name">Electrovation Global Technology LLP</p>
-      </div>
-    </section>
+  </section>
 
-    <div id="contact" class="contact-us section">
-      <div class="container">
-        <div class="row">
-          <div
-            class="col-lg-12 wow fadeInUp"
-            data-wow-duration="0.5s"
-            data-wow-delay="0.25s"
-          >
-            <form id="contact" action="" method="post">
-              <div class="row">
-                <div class="col-lg-6 offset-lg-3">
-                  <div class="section-heading">
-                    <h6>Contact Us</h6>
-                    <h2>
-                      Fill Out The Form Below To <span>Get</span> In
-                      <em>Touch</em> With Us
-                    </h2>
-                  </div>
+  <!-- our expert section -->
+  <div id="services" class="our-services section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
+            <h6>Meet the Experts</h6>
+            <h2>
+              Insight to <span>strategy,</span> precision in
+              <em>execution</em>
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="row">
+              <div class="col-lg-4">
+                  <img src="assets/images/EWPL/neeraj.jpg" alt="" />
+              </div>
+              <div class="col-lg-8">
+                <div class="right-content">
+                  <h4>Neeraj Kumar Prajapati</h4>
+                  <h5 class="exp_desig">Director</h5>
+                  <p>
+                    Brings deep industry insight and operational
+                    expertise to Electric World Energy (Indore) Pvt.
+                    Ltd. With a strong background in electrical
+                    systems and business management, he plays a
+                    pivotal role in driving project execution, vendor
+                    alignment, and client satisfaction. His leadership
+                    ensures that every solution delivered is both
+                    technically sound and commercially viable.
+                  </p>
                 </div>
-                <div class="col-lg-9">
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <fieldset>
-                        <input
-                          type="name"
-                          name="name"
-                          id="name"
-                          placeholder="Name"
-                          autocomplete="on"
-                          required
-                        />
-                      </fieldset>
-                    </div>
-                    <div class="col-lg-6">
-                      <fieldset>
-                        <input
-                          type="surname"
-                          name="surname"
-                          id="surname"
-                          placeholder="Surname"
-                          autocomplete="on"
-                          required
-                        />
-                      </fieldset>
-                    </div>
-                    <div class="col-lg-6">
-                      <fieldset>
-                        <input
-                          type="text"
-                          name="email"
-                          id="email"
-                          pattern="[^ @]*@[^ @]*"
-                          placeholder="Your Email"
-                          required=""
-                        />
-                      </fieldset>
-                    </div>
-                    <div class="col-lg-6">
-                      <fieldset>
-                        <input
-                          type="subject"
-                          name="subject"
-                          id="subject"
-                          placeholder="Subject"
-                          autocomplete="on"
-                        />
-                      </fieldset>
-                    </div>
-                    <div class="col-lg-12">
-                      <fieldset>
-                        <textarea
-                          name="message"
-                          type="text"
-                          class="form-control"
-                          id="message"
-                          placeholder="Message"
-                          required=""
-                        ></textarea>
-                      </fieldset>
-                    </div>
-                    <div class="col-lg-12">
-                      <fieldset>
-                        <button
-                          type="submit"
-                          id="form-submit"
-                          class="main-button"
-                        >
-                          Send Message Now
-                        </button>
-                      </fieldset>
-                    </div>
-                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+            <div class="row">
+              <div class="col-lg-4">
+                  <img src="assets/images/EWPL/vikas.jpg" alt="" />
+              </div>
+              <div class="col-lg-8">
+                <div class="right-content">
+                  <h4>Vikas Singh Baghel</h4>
+                   <h5 class="exp_desig">Director</h5>
+                  <p>
+                    The strategic force behind EWEPL’s growth and
+                    innovation. With a keen focus on new
+                    technologies, automation, and scalable service
+                    delivery, he leads the charge in developing
+                    smart, future-ready electrical solutions. His
+                    vision is instrumental in shaping the company’s
+                    roadmap toward sustainable and intelligent
+                    infrastructure systems.
                 </div>
-                <div class="col-lg-3">
-                  <div class="contact-info">
-                    <ul>
-                      <li>
-                        <div class="icon">
-                          <img
-                            src="assets/images/contact-icon-01.png"
-                            alt="email icon"
-                          />
-                        </div>
-                        <a href="mailto:directors@ewepl.in"
-                          >directors@ewepl.in</a
-                        >
-                      </li>
-                      <li>
-                        <div class="icon">
-                          <img
-                            src="assets/images/contact-icon-02.png"
-                            alt="phone"
-                          />
-                        </div>
-                        <a href="#">7509011116, 7523888379, 7049105634</a>
-                      </li>
-                      <li>
-                        <div class="icon">
-                          <img
-                            src="assets/images/contact-icon-03.png"
-                            alt="location"
-                          />
-                        </div>
-                        <a
-                          href="https://maps.google.com/?q=79-A,+Greater+Brajeshwai,+Kanadia,+Indore,+M.P.,+India-452010"
-                          target="_blank"
-                          >79-A, Greater Brajeshwai, Kanadia, Indore, M.P.,
-                          India-452010</a
-                        >
-                      </li>
-                    </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- contact us section -->
+  <div id="contact" class="contact-us section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
+          <form id="contact" action="" method="post">
+            <div class="row">
+              <div class="col-lg-6 offset-lg-3">
+                <div class="section-heading">
+                  <h6>Contact Us</h6>
+                  <h2>
+                    Fill Out The Form Below To <span>Get</span> In
+                    <em>Touch</em> With Us
+                  </h2>
+                </div>
+              </div>
+              <div class="col-lg-9">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <fieldset>
+                      <input type="name" name="name" id="name" placeholder="Name" autocomplete="on" required />
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-6">
+                    <fieldset>
+                      <input type="surname" name="surname" id="surname" placeholder="Surname" autocomplete="on"
+                        required />
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-6">
+                    <fieldset>
+                      <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email"
+                        required="" />
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-6">
+                    <fieldset>
+                      <input type="subject" name="subject" id="subject" placeholder="Subject" autocomplete="on" />
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <textarea name="message" type="text" class="form-control" id="message" placeholder="Message"
+                        required=""></textarea>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button type="submit" id="form-submit" class="main-button">
+                        Send Message Now
+                      </button>
+                    </fieldset>
                   </div>
                 </div>
               </div>
-            </form>
-          </div>
+              <div class="col-lg-3">
+                <div class="contact-info">
+                  <ul>
+                    <li>
+                      <div class="icon">
+                        <img src="assets/images/contact-icon-01.png" alt="email icon" />
+                      </div>
+                      <a href="mailto:directors@ewepl.in">directors@ewepl.in</a>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <img src="assets/images/contact-icon-02.png" alt="phone" />
+                      </div>
+                      <a href="#">7509011116, 7523888379, 7049105634</a>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <img src="assets/images/contact-icon-03.png" alt="location" />
+                      </div>
+                      <a href="https://maps.google.com/?q=79-A,+Greater+Brajeshwai,+Kanadia,+Indore,+M.P.,+India-452010"
+                        target="_blank">79-A, Greater Brajeshwai, Kanadia, Indore, M.P.,
+                        India-452010</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
+  </div>
 
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <p>
-              Copyright © 2025 EWEPL Co., Ltd. All Rights Reserved.
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>
+            Copyright © 2025 EWEPL Co., Ltd. All Rights Reserved.
 
-              <br />Web Designed by
-              <a
-                rel="nofollow"
-                href="https://templatemo.com"
-                title="free CSS templates"
-                >Kunal Parihar</a
-              >
-            </p>
-          </div>
+            <br />Web Designed by
+            <a rel="nofollow" href="https://kunalparihar.com/" target="_blank" title="free CSS templates">Kunal Parihar</a>
+          </p>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <!-- Scripts -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/animation.js"></script>
-    <script src="assets/js/imagesloaded.js"></script>
-    <script src="assets/js/custom.js"></script>
-  </body>
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("7nUZ_fjFtFadoKqTB"); // replace with your EmailJS Public Key
+    })();
+  </script>
+  <script>
+    document.getElementById("contact").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      // Get form values
+      let name = document.getElementById("name").value.trim();
+      let surname = document.getElementById("surname").value.trim();
+      let email = document.getElementById("email").value.trim();
+      let subject = document.getElementById("subject").value.trim();
+      let message = document.getElementById("message").value.trim();
+
+      // Simple validation
+      if (!name || !surname || !email || !message) {
+        alert("Please fill in all required fields.");
+        return;
+      }
+      let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      if (!email.match(emailPattern)) {
+        alert("Enter a valid email address.");
+        return;
+      }
+
+      // Send Email via EmailJS
+      emailjs.send("service_rgpjzdm", "template_aqndfsm", {
+        from_name: name + " " + surname,
+        from_email: email,
+        time: Date.now().toString(),
+        subject: subject,
+        message: message
+      }).then(function (response) {
+        showToast();
+        document.getElementById("contact").reset();
+      }, function (error) {
+        alert("Failed to send message. Please try again later.");
+      });
+    });
+
+    // Show toast function
+    function showToast() {
+      let toast = document.getElementById("toast");
+      toast.classList.add("show");
+      setTimeout(() => {
+        toast.classList.remove("show");
+      }, 3000);
+    }
+  </script>
+
+</body>
+
 </html>
